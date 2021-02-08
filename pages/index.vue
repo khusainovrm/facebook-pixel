@@ -34,7 +34,7 @@ export default {
   methods: {
     handler() {
       console.log('tadaa!')
-      this.$fb.track('TEST57395')
+      this.$fb.track('first')
     },
   },
 }
