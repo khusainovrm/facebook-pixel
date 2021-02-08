@@ -21,9 +21,9 @@
           GitHub
         </a>
       </div>
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
+      <div class="box" @click="one">1</div>
+      <div class="box" @click="two">2</div>
+      <div class="box" @click="three">3</div>
       <div @click="handler"><button>ACTION</button></div>
     </div>
   </div>
@@ -33,9 +33,16 @@
 export default {
   methods: {
     handler() {
-      console.log('tadaa!')
-      // this.$fb.track('first', { value: '42' })
       this.$fb.query('trackCustom', 'super')
+    },
+    one() {
+      this.$fb.track('CompleteRegistration', { status: true })
+    },
+    two() {
+      this.$fb.track('first', { value: '42' })
+    },
+    three() {
+      this.$fb.track('Subscribe', { currency: 'rub', value: 42 })
     },
   },
 }
