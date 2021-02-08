@@ -34,7 +34,8 @@ export default {
   methods: {
     handler() {
       console.log('tadaa!')
-      this.$fb.track('first', { value: '42' })
+      // this.$fb.track('first', { value: '42' })
+      this.$fb.query('trackCustom', 'super')
     },
   },
 }
