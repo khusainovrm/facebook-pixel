@@ -40,17 +40,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    [
-      'nuxt-facebook-pixel-module',
-      {
-        /* module options  321326459306532*/
-        track: 'PageView',
-        pixelId: '4085663334785683',
-        autoPageView: true,
-        disabled: false,
-        debug: process.env.NODE_ENV !== 'production',
-      },
-    ],
+    // [
+    //   'nuxt-facebook-pixel-module',
+    //   {
+    //     /* module options  321326459306532*/
+    //     track: 'PageView',
+    //     pixelId: '4085663334785683',
+    //     autoPageView: true,
+    //     disabled: false,
+    //     debug: process.env.NODE_ENV !== 'production',
+    //   },
+    // ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
